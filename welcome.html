@@ -3,220 +3,51 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Welcome to Catty</title>
-  <style type="text/css" rel="stylesheet" media="all">
-    /* Base ------------------------------ */
-    *:not(br):not(tr):not(html) {
-      font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-    }
-    body {
-      width: 100% !important;
-      height: 100%;
-      margin: 0;
-      line-height: 1.4;
-      background-color: #F5F7F9;
-      color: #839197;
-      -webkit-text-size-adjust: none;
-    }
-    a {
-      color: #555;
-    }
-
-    /* Layout ------------------------------ */
-    .email-wrapper {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      background-color: #F5F7F9;
-    }
-    .email-content {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Masthead ----------------------- */
-    .email-masthead {
-      padding: 25px 0;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-    }
-    .email-masthead_logo {
-      max-width: 400px;
-      border: 0;
-    }
-    .email-masthead_name {
-      margin-left: 5px;
-      font-size: 16px;
-      font-weight: bold;
-      color: #333;
-      text-decoration: none;
-      text-shadow: 0 1px 0 white;
-      align-self: center;
-    }
-
-    /* Body ------------------------------ */
-    .email-body {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      border-top: 1px solid #E7EAEC;
-      border-bottom: 1px solid #E7EAEC;
-      background-color: #FFFFFF;
-    }
-    .email-body_inner {
-      width: 570px;
-      margin: 0 auto;
-      padding: 0;
-    }
-    .email-footer {
-      width: 570px;
-      margin: 0 auto;
-      padding: 0;
-      text-align: center;
-    }
-    .email-footer p {
-      color: #839197;
-    }
-    .logo-img {
-      width: 30px;
-    }
-    .body-action {
-      width: 100%;
-      margin: 30px auto;
-      padding: 0;
-      text-align: center;
-    }
-    .body-sub {
-      margin-top: 25px;
-      padding-top: 25px;
-      border-top: 1px solid #E7EAEC;
-    }
-    .body-exp-top {
-      margin-top: 25px;
-      padding-top: 25px;
-      border-top: 1px solid #E7EAEC;
-      font-size: 15px;
-      font-weight: 500;
-      line-height: 24px;
-    }
-    .body-exp {
-      font-size: 15px;
-      font-weight: 500;
-      line-height: 24px;
-    }
-    .content-cell {
-      padding: 35px;
-    }
-    .align-right {
-      text-align: right;
-    }
-
-    /* Type ------------------------------ */
-    h1 {
-      margin-top: 0;
-      color: #292E31;
-      font-size: 19px;
-      font-weight: bold;
-      text-align: left;
-    }
-    h2 {
-      margin-top: 0;
-      color: #292E31;
-      font-size: 16px;
-      font-weight: bold;
-      text-align: left;
-    }
-    h3 {
-      margin-top: 0;
-      color: #292E31;
-      font-size: 14px;
-      font-weight: bold;
-      text-align: left;
-    }
-    p {
-      margin-top: 0;
-      margin-bottom: 5px;
-      color: #839197;
-      font-size: 16px;
-      line-height: 1.5em;
-      text-align: left;
-    }
-    p.hi {
-      color: #555;
-    }
-    p.hi-sub {
-      color: #555;
-      margin-bottom: 20px;
-      padding-bottom: 20px;
-    }
-    p.sub {
-      font-size: 12px;
-    }
-    p.center {
-      text-align: center;
-    }
-    p.exp {
-      font-size: 15px;
-    }
-
-    /* Buttons ------------------------------ */
-    .button {
-      display: inline-block;
-      width: 200px;
-      background-color: #111;
-      border-radius: 3px;
-      color: #ffffff;
-      font-size: 15px;
-      line-height: 45px;
-      text-align: center;
-      text-decoration: none;
-      -webkit-text-size-adjust: none;
-      mso-hide: all;
-    }
-    .button--green {
-      background-color: #28DB67;
-    }
-    .button--red {
-      background-color: #FF3665;
-    }
-    .button--blue {
-      background-color: #111;
-    }
-
-    /*Media Queries ------------------------------ */
-    @media only screen and (max-width: 600px) {
-      .email-body_inner,
-      .email-footer {
-        width: 100% !important;
-      }
-    }
-    @media only screen and (max-width: 500px) {
-      .button {
-        width: 100% !important;
-      }
-    }
-  </style>
+  <title>You're invited to write with {{sender_id}} on Catty</title>
 </head>
-<body>
-  <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0">
+<body style="width: 100% !important;
+  height: 100%;
+  margin: 0;
+  line-height: 1.4;
+  background-color: #F5F7F9;
+  color: #839197;
+  -webkit-text-size-adjust: none;">
+  <table style="width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F7F9;" width="100%" cellpadding="0" cellspacing="0">
     <tr>
-      <td align="center">
-        <table class="email-content" width="100%" cellpadding="0" cellspacing="0">
+      <td style="text-align: center">
+        <table style="width: 100%;
+        margin: 0;
+        padding: 0;" width="100%" cellpadding="0" cellspacing="0">
           <!-- Logo -->
           <tr>
-            <td class="email-masthead">
-              <img class="logo-img" src='https://firebasestorage.googleapis.com/v0/b/catty-336011.appspot.com/o/logo128.png?alt=media&token=379d5fbe-3afc-4a8c-a9bc-3fbfc58f4d66'/>
-              <a class="email-masthead_name">Catty</a>
+            <td style="padding: 25px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;">
+              <img style="width: 30px;" src='https://firebasestorage.googleapis.com/v0/b/catty-336011.appspot.com/o/logo128.png?alt=media&token=379d5fbe-3afc-4a8c-a9bc-3fbfc58f4d66'/>
+              <a style="margin-left: 5px;
+              font-size: 16px;
+              font-weight: bold;
+              color: #333;
+              text-decoration: none;
+              text-shadow: 0 1px 0 white;
+              align-self: center;">Catty</a>
             </td>
           </tr>
           <!-- Email Body -->
           <tr>
-            <td class="email-body" width="100%">
-              <table class="email-body_inner" align="center" width="570" cellpadding="0" cellspacing="0">
+            <td style="width: 100%;
+            margin: 0;
+            padding: 0;
+            border-top: 1px solid #E7EAEC;
+            border-bottom: 1px solid #E7EAEC;
+            background-color: #FFFFFF;" width="100%">
+              <table style="width: 570px;
+              margin: 0 auto;
+              padding: 0;" style="text-align: center" width="570" cellpadding="0" cellspacing="0">
                 <!-- Body content -->
                 <tr>
                   <td style="background-color:#ffffff;">
@@ -227,14 +58,46 @@
                         </tr>
                         <tr>
                           <td style="font-size: 15px; font-weight: 500; line-height: 24px;">
-                            <p class="hi">Hi <b>{{user_id}}</b></p>
-                            <p class="hi-sub">You signed up for Catty!</b></p>
+                            <p style="margin-top: 0;
+                            margin-bottom: 5px;
+                            color: #839197;
+                            font-size: 17px;
+                            line-height: 1.5em;
+                            text-align: left;
+                            font-weight: bold;
+                            color: #555;">Hi <b>{{user_id}}</b></p>
+                            <p style="margin-top: 0;
+                            margin-bottom: 5px;
+                            color: #839197;
+                            font-size: 17px;
+                            line-height: 1.5em;
+                            text-align: left;
+                            color: #555;
+                            margin-bottom: 20px;
+                            padding-bottom: 20px;">You signed up for Catty!</b></p>
                           </td>
                        </tr>
                          <tr >
-                            <td class="body-exp-top">
+                            <td style="margin-top: 25px;
+                            padding-top: 25px;
+                            border-top: 1px solid #E7EAEC;
+                            font-size: 15px;
+                            font-weight: 500;
+                            line-height: 24px;">
                                <div style="line-height: 24px">
-                                  <strong style="color: #111; font-weight: 700;">What's a Catty</strong>
+                                  <p style="margin-top: 0;
+                                  margin-bottom: 5px;
+                                  color: #839197;
+                                  font-size: 16px;
+                                  line-height: 1.5em;
+                                  text-align: left;
+                                  color: #111;
+                                  font-weight: 700;">What's a Catty</p>
+                                   <p style="margin-top: 0;
+                                   margin-bottom: 5px;
+                                   line-height: 1.5em;
+                                   text-align: left;
+                                   font-size: 15px;" style="margin-bottom: 10px;">Catty is a productivity tool that aims to solve asynchronous resource collection and document writing processes by merging it all into one space on mobile and web. </p>
                                </div>
                             </td>
                          </tr>
@@ -242,12 +105,37 @@
                            <td height="35" style="font-size: 35px; line-height: 35px;">&nbsp;</td>
                          </tr>
                          <tr>
-                            <td class="body-exp">
+                            <td style="font-size: 15px;
+                            padding-bottom: 30px;
+                            text-align: left;
+                            font-weight: 500;
+                            line-height: 24px;">
                                <div style="line-height: 24px">
-                                  <strong style="color: #111; font-weight: 700;">Our Community</strong>
-                                  <p class="exp" style="margin-bottom: 10px;">Join our community to get our news first:) </p>
-                                  <a target= "_blank" href="https://www.cattynote.biz/en"><img width="25" src="https://ci5.googleusercontent.com/proxy/CZYMwyy7p9bJTaL8GsP_nV8yDxggqFc7kZsfTobg6zi5cnw25mXTUd6HqkJv78UFnZmnTyBUOblURz2D-nA5IJHm1bPEIV5ca6uiNrBX4lYm33bvH8z7iR_vGZ5m2_U_iRk=s0-d-e1-ft#https://cdn-images.mailchimp.com/icons/social-block-v2/outline-dark-link-48.png" alt=""></a>
-                                  <a target= "_blank" href="https://instagram.com/cattynote"><img width="25" style="margin-left: 10px" src="https://ci4.googleusercontent.com/proxy/c266s7jXMo8amedHTT6-pqIveQYjw7G52DWikhTT1Mw4Of2TAplGr8713DZ8hZ5egd3h1Cz__O5-NrbWxkrjXjAuEZw5XaBsuiBNVq_uJaK3spnELm79yy2dmsHZeqL-JoUqpZ8pUw=s0-d-e1-ft#https://cdn-images.mailchimp.com/icons/social-block-v2/outline-dark-instagram-48.png" alt=""></a>
+                                  <p style="margin-top: 0;
+                                  margin-bottom: 5px;
+                                  color: #839197;
+                                  font-size: 16px;
+                                  line-height: 1.5em;
+                                  text-align: left;
+                                  color: #111;
+                                  font-weight: 800;">Our Community</p>
+                                  <p style="margin-top: 0;
+                                  margin-bottom: 5px;
+                                  line-height: 1.5em;
+                                  text-align: left;
+                                  font-size: 15px;" style="margin-bottom: 10px;">Join our community to get our news first:) </p>
+                                  <a style="margin-top: 0;
+                                  margin-bottom: 5px;
+                                  font-size: 16px;
+                                  line-height: 1.5em;
+                                  text-align: left;
+                                  color: #555;" target= "_blank" href="https://www.cattynote.biz/en"><img width="25" src="https://ci5.googleusercontent.com/proxy/CZYMwyy7p9bJTaL8GsP_nV8yDxggqFc7kZsfTobg6zi5cnw25mXTUd6HqkJv78UFnZmnTyBUOblURz2D-nA5IJHm1bPEIV5ca6uiNrBX4lYm33bvH8z7iR_vGZ5m2_U_iRk=s0-d-e1-ft#https://cdn-images.mailchimp.com/icons/social-block-v2/outline-dark-link-48.png" alt=""></a>
+                                  <a style="margin-top: 0;
+                                  margin-bottom: 5px;
+                                  font-size: 16px;
+                                  line-height: 1.5em;
+                                  text-align: left;
+                                  color: #555;" target= "_blank" href="https://instagram.com/cattynote"><img width="25" style="margin-left: 10px" src="https://ci4.googleusercontent.com/proxy/c266s7jXMo8amedHTT6-pqIveQYjw7G52DWikhTT1Mw4Of2TAplGr8713DZ8hZ5egd3h1Cz__O5-NrbWxkrjXjAuEZw5XaBsuiBNVq_uJaK3spnELm79yy2dmsHZeqL-JoUqpZ8pUw=s0-d-e1-ft#https://cdn-images.mailchimp.com/icons/social-block-v2/outline-dark-instagram-48.png" alt=""></a>
                                </div>
                             </td>
                          </tr>
@@ -255,10 +143,26 @@
                            <td height="35" style="font-size: 35px; line-height: 35px;">&nbsp;</td>
                          </tr>
                          <tr>
-                            <td class="body-exp">
+                            <td style="font-size: 15px;
+                            padding-bottom: 30px;
+                            text-align: left;
+                            font-weight: 500;
+                            line-height: 24px;">
                                <div style="line-height: 24px">
-                                  <strong style="color: #111; font-weight: 700;">Get the support you need</strong>
-                                  <p class="exp">To use service better, check our <a target= "_blank" href="https://www.cattynote.biz/en/guide">user guide</a>. And contact our support team anytime at pigbean.official@gmail.com or <a target= "_blank" href="k2y57.channel.io">k2y57.channel.io</a>.</p>
+                                  <p style="margin-top: 0;
+                                  margin-bottom: 5px;
+                                  color: #839197;
+                                  font-size: 16px;
+                                  line-height: 1.5em;
+                                  text-align: left;
+                                  color: #111;
+                                  font-weight: 800;">Get the support you need</p>
+                                  <p style="margin-top: 0;
+                                  margin-bottom: 5px;
+                                  color: #839197;
+                                  line-height: 1.5em;
+                                  text-align: left;
+                                  font-size: 15px;">To use service better, check our <a style="color: #555;" target= "_blank" href="https://www.cattynote.biz/en/guide">user guide</a>. And contact our support team anytime at pigbean.official@gmail.com or <a style="color: #555;" target= "_blank" href="k2y57.channel.io">k2y57.channel.io</a>.</p>
                                </div>
                             </td>
                          </tr>
@@ -266,17 +170,49 @@
                            <td height="35" style="font-size: 35px; line-height: 35px;">&nbsp;</td>
                          </tr>
                          <tr>
-                            <td class="body-exp">
-                              <strong style="color: #111; font-weight: 700;">Install a browser extension</strong>
-                              <p class="exp" >Collect web links, web screenshots and youtube captures onto Catty with one click.</p>
-                              <a target= "_blank" href="https://chrome.google.com/webstore/detail/catty-web-clipper/kjajbpgmgnojjjjihidkagemppicbjpg">Install extension</a>
+                            <td style="font-size: 15px;
+                            padding-bottom: 50px;
+                            text-align: left;
+                            font-weight: 500;
+                            line-height: 24px;">
+                              <p style="margin-top: 0;
+                              margin-bottom: 5px;
+                              color: #839197;
+                              font-size: 16px;
+                              line-height: 1.5em;
+                              text-align: left;
+                              color: #111;
+                              font-weight: 800;">Install a browser extension</p>
+                              <p style="margin-top: 0;
+                              margin-bottom: 5px;
+                              color: #839197;
+                              line-height: 1.5em;
+                              text-align: left;
+                              font-size: 15px;" >Collect web links, web screenshots and youtube captures onto Catty with one click.</p>
+                              <a style="color: #555;" target= "_blank" href="https://chrome.google.com/webstore/detail/catty-web-clipper/kjajbpgmgnojjjjihidkagemppicbjpg">Install extension</a>
                             </td>
                          </tr>
                          <tr>
-                          <td class="body-exp" style="padding-top: 40px;">
-                            <strong style="color: #111; font-weight: 700;">Download the App</strong>
-                            <p class="exp" >Available for Android</p>
-                            <a target= "_blank" href="https://play.google.com/store/apps/details?id=com.pigbean.catty">Download app</a>
+                          <td style="font-size: 15px;
+                          padding-bottom: 50px;
+                          text-align: left;
+                          font-weight: 500;
+                          line-height: 24px;" style="padding-top: 40px;">
+                            <p style="margin-top: 0;
+                            margin-bottom: 5px;
+                            color: #839197;
+                            font-size: 16px;
+                            line-height: 1.5em;
+                            text-align: left;
+                            color: #111;
+                            font-weight: 800;">Download the App</p>
+                            <p style="margin-top: 0;
+                            margin-bottom: 5px;
+                            color: #839197;
+                            line-height: 1.5em;
+                            text-align: left;
+                            font-size: 15px;" >Mobile app is currently available for Android. iOS users are available as mobile webview. Mobile webview supports all functions except the screenshot function. iOS app is under development.</p>
+                            <a style="color: #555;" target= "_blank" href="https://play.google.com/store/apps/details?id=com.pigbean.catty">Download app</a>
                           </td>
                        </tr>
                       </table>
@@ -284,11 +220,26 @@
                         <tr>
                            <td style="text-align:center; margin:0 auto;">
                               <br>
-                              <table class="body-action" align="center" width="100%" cellpadding="0" cellspacing="0">
+                              <table style="width: 100%;
+                              margin: 30px auto;
+                              padding: 0;
+                              text-align: center;" width="100%" cellpadding="0" cellspacing="0">
                                 <tr>
-                                  <td align="center">
+                                  <td>
                                     <div>
-                                      <a target= "_blank" href="{{action_url}}" class="button button--blue">Get started</a>
+                                      <a style="color: #555;
+                                      display: inline-block;
+                                      width: 200px;
+                                      background-color: #111;
+                                      border-radius: 3px;
+                                      color: #ffffff;
+                                      font-size: 15px;
+                                      line-height: 45px;
+                                      text-align: center;
+                                      text-decoration: none;
+                                      -webkit-text-size-adjust: none;
+                                      mso-hide: all;
+                                      background-color: #111;" target= "_blank" href="{{action_url}}">Get started</a>
                                     </div>
                                   </td>
                                 </tr>
@@ -303,15 +254,29 @@
           </tr>
           <tr>
             <td>
-              <table class="email-footer" align="center" width="570" cellpadding="0" cellspacing="0">
+              <table style="width: 570px;
+              margin: 0 auto;
+              padding: 0;
+              text-align: center;
+              text-align: center" width="570" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td class="content-cell">
+                  <td style="padding: 35px;">
                     <div style="display: flex; flex-direction: row; margin-bottom: 20px; justify-content: center;">
-                      <a target= "_blank" href="https://www.cattynote.biz/en"><img width="25" src="https://ci5.googleusercontent.com/proxy/CZYMwyy7p9bJTaL8GsP_nV8yDxggqFc7kZsfTobg6zi5cnw25mXTUd6HqkJv78UFnZmnTyBUOblURz2D-nA5IJHm1bPEIV5ca6uiNrBX4lYm33bvH8z7iR_vGZ5m2_U_iRk=s0-d-e1-ft#https://cdn-images.mailchimp.com/icons/social-block-v2/outline-dark-link-48.png" alt=""></a>
-                      <a target= "_blank" href="https://instagram.com/cattynote"><img width="25" style="margin-left: 10px" src="https://ci4.googleusercontent.com/proxy/c266s7jXMo8amedHTT6-pqIveQYjw7G52DWikhTT1Mw4Of2TAplGr8713DZ8hZ5egd3h1Cz__O5-NrbWxkrjXjAuEZw5XaBsuiBNVq_uJaK3spnELm79yy2dmsHZeqL-JoUqpZ8pUw=s0-d-e1-ft#https://cdn-images.mailchimp.com/icons/social-block-v2/outline-dark-instagram-48.png" alt=""></a>
+                      <a style="color: #555;" target= "_blank" href="https://www.cattynote.biz/en"><img width="25" src="https://ci5.googleusercontent.com/proxy/CZYMwyy7p9bJTaL8GsP_nV8yDxggqFc7kZsfTobg6zi5cnw25mXTUd6HqkJv78UFnZmnTyBUOblURz2D-nA5IJHm1bPEIV5ca6uiNrBX4lYm33bvH8z7iR_vGZ5m2_U_iRk=s0-d-e1-ft#https://cdn-images.mailchimp.com/icons/social-block-v2/outline-dark-link-48.png" alt=""></a>
+                      <a style="color: #555;" target= "_blank" href="https://instagram.com/cattynote"><img width="25" style="margin-left: 10px" src="https://ci4.googleusercontent.com/proxy/c266s7jXMo8amedHTT6-pqIveQYjw7G52DWikhTT1Mw4Of2TAplGr8713DZ8hZ5egd3h1Cz__O5-NrbWxkrjXjAuEZw5XaBsuiBNVq_uJaK3spnELm79yy2dmsHZeqL-JoUqpZ8pUw=s0-d-e1-ft#https://cdn-images.mailchimp.com/icons/social-block-v2/outline-dark-instagram-48.png" alt=""></a>
                     </div>
-                    <p class="sub center">Copyright © 2022 PIGBEAN, All rights reserved.</p>
-                    <p class="sub center">You are receiving this email because you opted in via our website.</p>
+                    <p style="margin-top: 0;
+                    margin-bottom: 5px;
+                    color: #839197;
+                    line-height: 1.5em;
+                    text-align: left;
+                    font-size: 12px; text-align: center;">Copyright © 2022 PIGBEAN, All rights reserved.</p>
+                    <p style="margin-top: 0;
+                    margin-bottom: 5px;
+                    color: #839197;
+                    line-height: 1.5em;
+                    text-align: left;
+                    font-size: 12px; text-align: center;">You are receiving this email because you opted in via our website.</p>
                   </td>
                 </tr>
               </table>
